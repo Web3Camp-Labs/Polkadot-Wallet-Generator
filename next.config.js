@@ -6,7 +6,7 @@ const nextConfig = {
   experimental: {
     styledComponents: true,
   },
-  assetPrefix: isProd ?'/ETH-Wallet-Generator':'',
+  assetPrefix: isProd ?'/Polkadot-Wallet-Generator':'',
 }
 
 module.exports = nextConfig
