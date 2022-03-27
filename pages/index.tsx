@@ -5,7 +5,7 @@ import {Container, Row, Col, Card} from 'react-bootstrap';
 
 import HeaderTop from "../components/headTop";
 import Batch from "../components/batch";
-
+import FooterBox from "../components/footerBox";
 
 const MainBox = styled.div`
     display: flex;
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
               </BgBox>
           </MainBox>
       </main>
-
+        <FooterBox />
 
     </div>
   )
