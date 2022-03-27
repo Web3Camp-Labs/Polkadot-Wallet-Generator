@@ -9,10 +9,17 @@ import FooterBox from "../components/footerBox";
 
 const MainBox = styled.div`
     display: flex;
+  flex-grow: 1;
 `
 
 const BgBox = styled(Container)`
   margin-top: 30px;
+`
+
+const MainContent =styled.main`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 `
 
 const CardBox = styled(Card)`
@@ -31,7 +38,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main >
+      <MainContent >
           <HeaderTop />
           <MainBox>
               <BgBox>
@@ -44,8 +51,9 @@ const Home: NextPage = () => {
                   </Row>
               </BgBox>
           </MainBox>
-      </main>
-        <FooterBox />
+          <FooterBox />
+      </MainContent>
+
 
     </div>
   )
