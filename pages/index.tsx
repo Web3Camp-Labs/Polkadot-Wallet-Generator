@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styled from "styled-components";
-import {Container, Row, Col, Card} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 
 import HeaderTop from "../components/headTop";
 import Batch from "../components/batch";
@@ -29,6 +29,44 @@ const CardBox = styled.div`
   padding: 30px;
 `
 
+const TopLine = styled.div`
+    margin-bottom: 20px;
+`
+
+const Lft = styled.div`
+    display: flex;
+  align-items: center;
+  .imgBox{
+    width: 96px;
+    height: 96px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #EDEFF0;
+    padding: 13px;
+    margin-right: 16px;
+    box-sizing: border-box;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+`
+
+const ButtonBox = styled.div`
+    padding: 20px 0;
+    text-align: right;
+`
+
+const TitleBox = styled.div`
+  font-family: Helvetica;
+  font-size: 16px;
+  .tit{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+`
+
 
 const Home: NextPage = () => {
   return (
@@ -44,8 +82,23 @@ const Home: NextPage = () => {
           <MainBox>
               <BgBox>
                   <Row>
+                      <Col md={12}>
+                          <TopLine>
+                              <Row>
+                                  <Col md={12}>
+                                      <Lft>
+                                          <div className="imgBox"><img src="./polkadot.png" alt=""/></div>
+                                          <TitleBox>
+                                              <div className="tit">Polkadot wallet generator</div>
+                                              <div>Generate Polkadot Wallet Address with @Polkadot/api !</div>
+                                          </TitleBox>
+                                      </Lft>
+                                  </Col>
+                              </Row>
+                          </TopLine>
+                      </Col>
                       <Col md={12} xs={12}>
-                          <CardBox body>
+                          <CardBox>
                               <Batch />
                           </CardBox>
                       </Col>

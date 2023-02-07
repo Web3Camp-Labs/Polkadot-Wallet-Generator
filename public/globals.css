@@ -34,7 +34,7 @@ ul,li{
   margin: 0;
 }
 .btn-flat {
-  background-color: #2D1D0A;
+  background-color: purple;
   color: white;
     min-width: 152px;
     height: 46px;
@@ -45,7 +45,7 @@ ul,li{
    outline: none;
  }
 .btn-flat:hover{
-   background: purple;
+   background: #2D1D0A;
    color: white;
  }
 .spinner-primary{
