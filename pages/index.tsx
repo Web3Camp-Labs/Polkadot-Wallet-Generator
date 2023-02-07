@@ -22,10 +22,11 @@ const MainContent =styled.main`
   min-height: 100vh;
 `
 
-const CardBox = styled(Card)`
-  border:0;
-  box-shadow: 0 0 5px #ccc;
-  border-radius: 6px;
+const CardBox = styled.div`
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 1px solid #EDEFF0;
+  padding: 30px;
 `
 
 

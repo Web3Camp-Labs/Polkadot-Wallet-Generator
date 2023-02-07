@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <div>
     <Component {...pageProps} />
     {/*<GlobalStyle />*/}
-    <link rel="stylesheet" href="https://web3camp.us/globals.css"/>
+    <link rel="stylesheet" href="./globals.css"/>
   </div>
 }
 

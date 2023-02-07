@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {Download, ClipboardCheck} from 'react-bootstrap-icons';
 import CsvDownloader from 'react-csv-downloader'
 
-import { mnemonicGenerate,} from '@polkadot/util-crypto';
+import { mnemonicGenerate} from '@polkadot/util-crypto';
 import { Keyring } from  '@polkadot/api';
 
 const Ulbox = styled.ul`
@@ -93,7 +93,6 @@ export default function Batch(){
             address,
             mnemonic,
         } as walletObj;
-
     }
     const handleCreate = async() =>{
         setLoading(true)
